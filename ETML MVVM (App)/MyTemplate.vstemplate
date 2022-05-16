@@ -1,0 +1,42 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ETML MVVM (App)</Name>
+    <Description>Ce modèle de projet est un sous-projet d'ETML MVVM.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ETML MVVM (App)</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+	<Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ETML MVVM.csproj" File="ETML MVVM.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <Folder Name="PublishProfiles" TargetFolderName="PublishProfiles">
+          <ProjectItem ReplaceParameters="false" TargetFileName="win10-arm64.pubxml">win10-arm64.pubxml</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="win10-x64.pubxml">win10-x64.pubxml</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="win10-x86.pubxml">win10-x86.pubxml</ProjectItem>
+        </Folder>
+      </Folder>
+	  <Folder Name="VM_Viewmodels" TargetFolderName="VM_Viewmodels">
+		<ProjectItem ReplaceParameters="true" TargetFileName="DelegateCommand.cs">DelegateCommand.cs</ProjectItem>
+	  </Folder>
+      <Folder Name="V_Views" TargetFolderName="V_Views">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainPage.xaml">MainPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainPage.xaml.cs">MainPage.xaml.cs</ProjectItem>
+      </Folder>
+	  <Folder Name="M_Models" TargetFolderName="M_Models" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.manifest">app.manifest</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.xaml">MainWindow.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.xaml.cs">MainWindow.xaml.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

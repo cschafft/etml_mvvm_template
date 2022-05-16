@@ -1,0 +1,35 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+		<Name>ETML MVVM</Name>
+		<Description>Ce modèle ETML sert de base à la création d'une application Desktop réalisée en .NET 6 et WinUI 3</Description>
+		<ProjectType>CSharp</ProjectType>
+		<ProjectSubType>
+		</ProjectSubType>
+		<SortOrder>1000</SortOrder>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>ETML MVVM</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+		<LanguageTag>C#</LanguageTag>
+		<PlatformTag>Windows</PlatformTag>
+		<PlatformTag>Desktop</PlatformTag>
+		<ProjectTypeTag>XAML</ProjectTypeTag>
+		<ProjectTypeTag>WinUI</ProjectTypeTag>
+		<ProjectTypeTag>ETML</ProjectTypeTag>
+		<LocationField>Enabled</LocationField>
+		<EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+		<CreateInPlace>true</CreateInPlace>
+		<Icon>__TemplateIcon.png</Icon>
+		<PreviewImage>__PreviewImage.png</PreviewImage>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+			<ProjectTemplateLink ProjectName="$projectname$ (Package)" CopyParameters="true">
+                ETML MVVM (Package)\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$ (App)" CopyParameters="true">
+                ETML MVVM (App)\MyTemplate.vstemplate
+            </ProjectTemplateLink>            
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
